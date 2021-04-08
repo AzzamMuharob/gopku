@@ -18,8 +18,5 @@ public class MainActivity extends AppCompatActivity {
         Intent i = new Intent(this,RS.class);
         startActivity(i);
 
-
-
-
     }
 }
