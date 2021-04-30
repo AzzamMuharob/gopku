@@ -9,16 +9,15 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 
-public class RS extends ListActivity {
+public class SuperMarket extends ListActivity {
     @Override
     protected void onCreate(@Nullable Bundle icicle) {
         super.onCreate(icicle);
-        String[] list = new String[]{
-                "RS Awal Bros",
-                "RS Eka Hospital",
-                "RS Ibnu Sina",
-                "RS Aulia Hospital",
-                "RS Awal Bros Panam",
+        String[] list = new String[] {
+                "Pasar Buah Pekanbaru",
+                "Lucky Supermarket",
+                "Toko Lotte Grosir",
+                "Guardian"
         };
         this.setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list));
     }
@@ -32,22 +31,24 @@ public class RS extends ListActivity {
     }
 
     private void tampilkanpilihan(String pilihan) {
-        try {
+        try{
             Intent a = null;
-            if (pilihan.equals("RS Awal Bros")) {
-                a = new Intent(this, RSAwalBros.class);
-            } else if (pilihan.equals("RS Eka Hospital")) {
-                a = new Intent(this, RSEkaHospital.class);
-            } else if (pilihan.equals("RS Ibnu Sina")) {
-                a = new Intent(this, RSIbnuSina.class);
-            } else if (pilihan.equals("RS Aulia Hospital")) {
-                a = new Intent(this, RSAuliaHospital.class);
-            } else {
-                a = new Intent(this, RSAwalBrosPanam.class);
+            if (pilihan.equals("Pasar Buah Pekanbaru")){
+                a = new Intent(this, PasarBuahPekanbaru.class);
+            }
+            else if (pilihan.equals("Lucky Supermarket")){
+              a = new Intent(this, LuckySupermarket.class);
+            }
+            else if (pilihan.equals("Toko Lotte Grosir")){
+              a = new Intent(this, TokoLotteGrosir.class);
+            }
+            else {
+              a = new Intent(this, Guardian.class);
             }
             startActivity(a);
-        } catch (Exception e) {
+        } catch (Exception e){
 
         }
     }
+
 }

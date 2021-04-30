@@ -9,16 +9,16 @@ import android.widget.ListView;
 
 import androidx.annotation.Nullable;
 
-public class RS extends ListActivity {
+public class School extends ListActivity {
     @Override
     protected void onCreate(@Nullable Bundle icicle) {
         super.onCreate(icicle);
-        String[] list = new String[]{
-                "RS Awal Bros",
-                "RS Eka Hospital",
-                "RS Ibnu Sina",
-                "RS Aulia Hospital",
-                "RS Awal Bros Panam",
+        String[] list = new String[] {
+                "MAN 1 Pekanbaru",
+                "SMKN 1 Pekanbaru",
+                "SMAN 4 Pekanbaru",
+                "SMAN 5 Pekanbaru",
+                "SMA Handayani",
         };
         this.setListAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, list));
     }
@@ -32,22 +32,27 @@ public class RS extends ListActivity {
     }
 
     private void tampilkanpilihan(String pilihan) {
-        try {
+        try{
             Intent a = null;
-            if (pilihan.equals("RS Awal Bros")) {
-                a = new Intent(this, RSAwalBros.class);
-            } else if (pilihan.equals("RS Eka Hospital")) {
-                a = new Intent(this, RSEkaHospital.class);
-            } else if (pilihan.equals("RS Ibnu Sina")) {
-                a = new Intent(this, RSIbnuSina.class);
-            } else if (pilihan.equals("RS Aulia Hospital")) {
-                a = new Intent(this, RSAuliaHospital.class);
-            } else {
-                a = new Intent(this, RSAwalBrosPanam.class);
+            if (pilihan.equals("MAN 1 Pekanbaru")){
+                a = new Intent(this, MAN1Pekanbaru.class);
+            }
+            else if (pilihan.equals("SMKN 1 Pekanbaru")){
+              a = new Intent(this,SMKN1Pekanbaru.class);
+            }
+            else if (pilihan.equals("SMAN 4 Pekanbaru")){
+              a = new Intent(this, SMAN4Pekanbaru.class);
+            }
+            else if (pilihan.equals("SMAN 5 Pekanbaru")){
+              a = new Intent(this, SMAN5Pekanbaru.class);
+            }
+            else {
+              a = new Intent(this, SMAHandayani.class);
             }
             startActivity(a);
-        } catch (Exception e) {
+        } catch (Exception e){
 
         }
     }
+
 }

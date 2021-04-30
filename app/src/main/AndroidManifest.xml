@@ -16,6 +16,32 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RS"></activity>
+        <activity android:name=".RSAwalBros"></activity>
+        <activity android:name=".RSAuliaHospital"></activity>
+        <activity android:name=".RSIbnuSina"></activity>
+        <activity android:name=".RSEkaHospital"></activity>
+        <activity android:name=".RSAwalBrosPanam"></activity>
+
+        <activity android:name=".PoliceStation"></activity>
+        <activity android:name=".PolrestaPekanbaru"></activity>
+        <activity android:name=".PolsekBukitRaya"></activity>
+        <activity android:name=".PolsekSukajadi"></activity>
+        <activity android:name=".PolsekTampan"></activity>
+        <activity android:name=".PolsekTenayanRaya"></activity>
+
+        <activity android:name=".SuperMarket"></activity>
+        <activity android:name=".TokoLotteGrosir"></activity>
+        <activity android:name=".Guardian"></activity>
+        <activity android:name=".LuckySupermarket"></activity>
+        <activity android:name=".PasarBuahPekanbaru"></activity>
+
+        <activity android:name=".School"></activity>
+        <activity android:name=".MAN1Pekanbaru"></activity>
+        <activity android:name=".SMKN1Pekanbaru"></activity>
+        <activity android:name=".SMAN4Pekanbaru"></activity>
+        <activity android:name=".SMAN5Pekanbaru"></activity>
+        <activity android:name=".SMAHandayani"></activity>
     </application>
 
 </manifest>
